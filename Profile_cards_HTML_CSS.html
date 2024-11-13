@@ -1,0 +1,90 @@
+<!-- Here is the link I reffered for this challenge -->
+<!-- https://res.cloudinary.com/practicaldev/image/fetch/s--7tYyM-D9--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://1.bp.blogspot.com/-6wq3UTzi1DM/YKon_vd7fmI/AAAAAAAAAJU/so2GsR0P1F48jQRzZewTOZcvcSqhxMFhgCLcBGAsYHQ/s16000/p30.gif -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-color: black;
+        }
+        .parent{
+            display: flex;
+            width: 1000px;
+            height: 550px;
+            margin: 0 auto;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .child{
+            background-image: linear-gradient(45deg,black,lightgrey,silver,rgb(209, 209, 209),grey,gray,silver,black);
+            text-align: center;
+            color: black;
+            width: 300px;
+            height: 350px;
+            margin: 5px;
+            font-weight: bolder;
+            padding: 10px;
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-sizing: border-box;
+        }
+        .child:hover{
+            box-shadow: 0px 0px 15px white;
+        }
+        .child img{
+            margin-top: 25px;
+            border-radius: 45%;
+        }
+        h3{
+            margin-bottom: 12px;
+            margin-top: 15px;
+        }
+        h5{
+            margin-top: 12px;
+            margin-bottom: 15px;
+        }
+        .child i{
+            padding: 5px;
+            opacity: 0.5;
+        }
+        .child i:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <img src="https://i.pinimg.com/736x/12/3d/5e/123d5e17e0efbd9c3818f576cf9d5f3a.jpg" alt="girl" width="100px" height="100px" >
+            <h3>Suha Seni</h3>
+            <h5>Web Developer</h5>
+            <p>Which is worse, that everyone has his price, or that the price is always so low.</p>
+            <span><i class="fa fa-twitter" title="@Suha_developer_seni"></i>
+                <i class="fa fa-telegram"></i>
+                <i class="fa fa-wechat"></i></span>
+        </div>
+        <div class="child">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.4UHPhvDYHxW6P7DHhEmN_AHaHa&pid=Api&P=0&h=180" alt="" width="100px" height="100px">
+            <h3>John Mades</h3>
+            <h5>Socialist</h5>
+            <p>I'm killing time while I wait for life to shower me with meaning and happiness</p>
+            <span><i class="fa fa-twitter" title="@johmandes_principles"></i>
+                <i class="fa fa-facebook" style="padding: 7px;"></i>
+                <i class="fa fa-phone"></i></span>
+        </div>
+        <div class="child">
+            <img src="https://i.imgur.com/ctMCP29.jpg" alt="" width="100px" height="100px">
+            <h3>Camilla Tos</h3>
+            <h5>Public Relations</h5>
+            <p>The only skills I have the patience to learn are those that have no real application in life.</p>
+            <span><i class="fa fa-twitter" title="@Vees_Camilla_tos"></i>
+                <i class="fa fa-envelope"></i>
+                <i class="fa fa-wechat"></i></span>
+        </div>
+    </div>
+</body>
+</html>

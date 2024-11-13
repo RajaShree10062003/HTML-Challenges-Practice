@@ -1,0 +1,174 @@
+<!-- Here is the link I reffered for this challenge -->
+<!-- https://res.cloudinary.com/practicaldev/image/fetch/s--Sv2JIDYi--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://1.bp.blogspot.com/-zWEh_YCWhFw/YKOU1XDFqeI/AAAAAAAAAAk/41YgaD0eUK8ZrhGHYBqPBQ0pXxP-LZNIwCLcBGAsYHQ/s16000/p1.gif -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Button</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .parent {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 800px;
+            height: 500px;
+            color: white;
+            border: 1px solid black;
+            margin: 0 auto;
+            font-weight: bolder;
+            letter-spacing: 2px;
+        }
+
+        .child {
+            width: 180px;
+            height: 70px;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 78px;
+            margin: 10px;
+            cursor: pointer;
+            /* animation-name: borderglow;
+            animation-iteration-count: infinite;
+            animation-duration: 2s; */
+        }
+        /* @keyframes borderglow {
+           25%{
+            border-top-color: white;
+           }
+           50%{
+            border-right-color: lime;
+           }
+           75%{
+            border-bottom-color: pink;
+           }
+           100%{
+            border-left-color: green;
+           }
+        } */
+
+        .green {
+            color: lime;
+            animation-name: borderglow;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+        @keyframes borderglow {
+           25%{
+            border-top-color: lime;
+            border-top-thickness: 3px;
+           }
+           50%{
+            border-right-color: lime;
+            border-right-thickness: 3px;
+
+           }
+           75%{
+            border-bottom-color: lime;
+            border-bottom-thickness: 3px;
+
+           }
+           100%{
+            border-left-color: lime;
+            border-left-thickness: 3px;
+
+           }
+        }
+
+        .green:hover {
+            background-color: lime;
+            color: black;
+            /* animation: none; */
+            box-shadow: 5px 5px 10px 5px lime, -5px -5px 10px 5px lime;
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3));
+        }
+
+        .pink {
+            color: deeppink;
+            animation-name: borderglowpink;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+        @keyframes borderglowpink {
+           20%{
+            border-top-color: deeppink;
+            border-top-thickness: 3px;
+           }
+           45%{
+            border-right-color: deeppink;
+            border-right-thickness: 3px;
+
+           }
+           70%{
+            border-bottom-color: deeppink;
+            border-bottom-thickness: 3px;
+
+           }
+           95%{
+            border-left-color: deeppink;
+            border-left-thickness: 3px;
+
+           }
+        }
+
+        .pink:hover {
+            background-color: deeppink;
+            color: black;
+            box-shadow: 5px 5px 10px 5px deeppink, -5px -5px 10px 5px deeppink;
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3));
+
+        }
+
+        .cyan {
+            color: cyan;
+            animation-name: borderglowcyan;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+        @keyframes borderglowcyan {
+           25%{
+            border-top-color: cyan;
+            border-top-thickness: 3px;
+           }
+           50%{
+            border-right-color: cyan;
+            border-right-thickness: 3px;
+
+           }
+           75%{
+            border-bottom-color: cyan;
+            border-bottom-thickness: 3px;
+
+           }
+           100%{
+            border-left-color: cyan;
+            border-left-thickness: 3px;
+
+           }
+        }
+
+        .cyan:hover {
+            background-color: cyan;
+            color: black;
+            box-shadow: 5px 5px 10px 5px cyan, -5px -5px 10px 5px cyan;
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0,0,0,0.3));
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child green">Neon button</div>
+        <div class="child pink">Neon button</div>
+        <div class="child cyan">Neon button</div>
+    </div>
+</body>
+
+</html> 12px

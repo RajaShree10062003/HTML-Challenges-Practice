@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaroid cards</title>
+    <style>
+        body{
+            background-image: url(https://c.tenor.com/rXqJm7XQ-qsAAAAd/water-fish.gif);
+            background-repeat: repeat;
+        }
+        img{
+            width: 200px;
+            height: 150px;
+            padding: 15px;
+            padding-bottom: 10px;
+        }
+        .child{
+            width: 230px;
+            height: 250px;
+            background-color: transparent;
+            padding: auto;
+            margin: 5px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            
+        }
+        .child>p{
+            text-align: center;
+            padding-top: -10px;
+            font-weight: bold;
+        }
+        .container{
+            position: relative;
+            background-color: grey;
+
+        }
+        #o{
+            position: absolute;
+            top: 250px;
+            left: 400px;
+            transform: rotate(9deg);
+            box-shadow: 2px 2px 5px 5px rgb(147, 246, 224);
+            z-index: 1;
+            background-color: white;
+            animation-name: show;
+            animation-duration: 7s;
+        }
+        @keyframes show {
+            0%{
+                position: absolute;
+                top: 5px;
+                left: 85px;
+            }
+            20%{
+                
+                position: absolute;
+                top: 50px;
+                left: 170px;
+                transform: rotate(5deg);
+            }
+            40%{
+                position: absolute;
+                top: 90px;
+                left: 240px;
+                transform: rotate(-5deg);
+            }
+            60%{
+                position: absolute;
+                top: 150px;
+                left: 320px;
+                transform: rotate(7deg);
+            }
+            80%{
+                position: absolute;
+                top: 200px;
+                left: 380;
+                transform: rotate(-8deg);
+            }
+            100%{
+                position: absolute;
+                top: 250px;
+                left: 400px;
+                transform: rotate(9deg);
+            }
+            
+        }
+        #o:hover{
+            z-index: 7;
+            width: 250;
+        }
+        #on{
+            position: absolute;
+            top: 170px;
+            left: 550px;
+            transform: rotate(-12deg);
+            background-color: white;
+            box-shadow: 2px 2px 5px 5px rgb(119, 119, 119);
+            z-index: 4;
+            animation-name: shon;
+            animation-duration: 6s;
+        }
+        @keyframes shon {
+            0%{
+                position: absolute;
+                top: 25px;
+                right: 90px;
+            }
+            20%{
+                
+                position: absolute;
+                top: 55px;
+                right: 172px;
+                transform: rotate(-7deg);
+            }
+            40%{
+                position: absolute;
+                top: 87px;
+                right: 250px;
+                transform: rotate(9deg);
+            }
+            60%{
+                position: absolute;
+                top: 105px;
+                left: 360px;
+                transform: rotate(-9deg);
+            }
+            80%{
+                position: absolute;
+                top: 140px;
+                left: 480px;
+                transform: rotate(12deg);
+            }
+            100%{
+                position: absolute;
+                top: 170px;
+                left: 550px;
+                transform: rotate(-12deg);
+            }
+            
+        }
+        #on:hover{
+            z-index: 7;
+            width: 250; 
+        }
+        #onn{
+            position: absolute;
+            top: 25px;
+            right: 620px;
+            background-color: white;
+            transform: rotate(20deg);
+            z-index: 2;
+            box-shadow: 0px 0px 5px 5px rgb(82, 82, 82);
+            animation-name: shonn;
+            animation-duration: 7s;
+        }
+        @keyframes shonn {
+            0%{
+                position: absolute;
+                bottom: 25px;
+                right: 90px;
+            }
+            20%{
+                
+                position: absolute;
+                bottom: 55px;
+                right: 172px;
+                transform: rotate(-7deg);
+            }
+            40%{
+                position: absolute;
+                bottom: 87px;
+                right: 150px;
+                transform: rotate(9deg);
+            }
+            60%{
+                position: absolute;
+                top: 158px;
+                right: 360px;
+                transform: rotate(-9deg);
+            }
+            80%{
+                position: absolute;
+                top: 18px;
+                right: 550px;
+                transform: rotate(12deg);
+            }
+            100%{
+                position: absolute;
+                top: 25px;
+                right: 620px;
+                transform: rotate(20deg);
+            }
+            
+        }
+        #onn:hover{
+            z-index: 7;
+            width: 250; 
+        }
+        #onnn{
+            position: absolute;
+            top: 2px;
+            left: 620px;
+            transform: rotate(-25deg);
+            background-color: white;
+            box-shadow: 0px 0px 5px 5px rgb(82, 82, 82);
+            z-index: 3;
+            animation-name: shonnn;
+            animation-duration: 6s;
+            animation-timing-function: linear;
+        }
+        @keyframes shonnn {
+            0%{
+                position: absolute;
+                top: 5px;
+                right: 105px;
+            }
+            20%{
+                
+                position: absolute;
+                top: 15px;
+                right: 212px;
+                transform: rotate(-5deg);
+            }
+            40%{
+                position: absolute;
+                top: 20px;
+                right: 320px;
+                transform: rotate(9deg);
+            }
+            60%{
+                position: absolute;
+                top: 10px;
+                left: 420px;
+                transform: rotate(-9deg);
+            }
+            80%{
+                position: absolute;
+                top: 5px;
+                left: 550px;
+                transform: rotate(12deg);
+            }
+            100%{
+                position: absolute;
+                top: 2px;
+                left: 620px;
+                transform: rotate(-25deg);
+            }
+            
+        }
+        #onnn:hover{
+            z-index: 7;
+            width: 250;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child" id="o">
+            <img src="https://media2.giphy.com/media/VyAwMGQB7q3oA/giphy.gif" alt="bali">
+            <p>Back in Maldives@98</p>
+        </div>
+        <div class="child" id="on">
+            <img src="https://i.pinimg.com/originals/45/60/6d/45606d632011d847d07203142bde2d71.gif" alt="bali">
+            <p>Back in Bali@87</p>
+        </div>
+        <div class="child" id="onn">
+            <img src="https://i.pinimg.com/originals/14/9e/52/149e525cf162720f865b2a3b1b6d25b9.gif" alt="bali">
+            <p>Back in Angelfalls@93</p>
+        </div>
+        <div class="child" id="onnn">
+            <img src="https://giffiles.alphacoders.com/203/20385.gif" alt="bali">
+            <p>Back in Goa@07</p>
+        </div>
+    </div>
+</body>
+</html>

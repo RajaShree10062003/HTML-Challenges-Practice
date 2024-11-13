@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 1500px;
+            height: 1250px;
+            position: relative;
+        
+        }
+        .child{
+            width: 300px;
+            height: 250px;
+            border-top: 7px solid black;
+            box-sizing: border-box;
+            padding: 10px;
+            padding-left: 20px;
+        }
+        .child>img{
+            float: right;
+            padding-right: 20px;
+        }
+        #first{
+            position: absolute;
+            top: 200px;
+            left: 150px;
+            border-top-color: red;
+            box-shadow: 0px 3px 7px grey, 0px 3px 15px 3px rgb(158, 157, 157), 2px 12px 35px grey;
+            background-image: linear-gradient(rgb(251, 170, 183),rgb(254, 151, 139),rgb(252, 63, 63));
+        }
+        #second{
+            position: absolute;
+            top: 100px;
+            left: 500px;
+            border-top-color: blue;
+            box-shadow: 0px 3px 10px grey, 0px 3px 15px 3px rgb(158, 157, 157), 2px 12px 35px grey;
+            background-image: linear-gradient(skyblue,rgb(111, 210, 249),rgb(77, 77, 247));
+        }
+        #third{
+            position: absolute;
+            top: 250px;
+            right: 350px;
+            border-top-color:rgb(242, 176, 10);
+            box-shadow: 0px 3px 10px grey, 0px 3px 15px 3px rgb(158, 157, 157), 2px 12px 35px grey;
+            background-image: linear-gradient(rgb(249, 249, 161),rgb(253, 253, 139),rgb(249, 191, 84));
+        }
+        #four{
+            position: absolute;
+            bottom: 600px;
+            left: 500px;
+            border-top-color:green;
+            box-shadow: 0px 3px 10px grey, 0px 3px 15px 3px rgba(158, 157, 157, 0.5), 2px 12px 35px grey;
+            background-image: linear-gradient(rgb(219, 251, 219),rgb(197, 244, 197),rgb(3, 211, 3))  ;
+        }
+         .child>.colors:hover{
+            background-image: url('https://media.tenor.com/images/ee9dd9991c6d0a62f3c68bc39c6b9096/tenor.gif');
+            background-repeat: repeat;
+            z-index: 5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="child" id="first">
+        <div class="colors">
+        <h4>Einstein</h4>
+        <p>The difference between Stupidity and genius is that genius has its limits.</p>
+        <img src="http://www.clipartbest.com/cliparts/di7/6o8/di76o8p6T.png" height="70px" width="80px" alt="einstein"></div>
+    </div>
+    <div class="child" id="second">
+        <div class="colors">
+        <h4>Hayden Sixx</h4>
+        <p>Bravery and Stupidity are the same thing, only the outcome determines your label.</p>
+        <img src="https://static.vecteezy.com/system/resources/previews/024/187/202/original/blue-ribbon-color-bows-isolated-on-transparent-background-png.png" alt="" width="60px" height="50px">
+    </div></div>
+    <div class="child" id="third">
+        <div class="colors">
+        <h4>Lewis Pugh</h4>
+        <p>There's is a fine line between stupid and brave, which should never be crossed. </p>
+        <img src="https://freepngimg.com/thumb/ribbon/66684-ribbon-gold-free-png-hq.png" alt="" width="50px" height="50px">
+    </div></div>
+    <div class="child" id="four">
+        <div class="colors">
+        <h4>Edgar Allan Poe</h4>
+        <p>Stupidity is a talent for misconception.</p>
+        <img src="https://i.pinimg.com/originals/71/70/21/717021d1fc61c8d977b04194deeba177.png" alt="" width="50px" height="70px">
+    </div></div>
+</div>
+</body>
+</html>

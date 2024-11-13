@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flip cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Sofadi One", system-ui;
+            background-color: black;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            cursor: url("C:/Users/HP 1030 G3/Downloads/parrot.jpg"), auto;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-family: "Sofadi One", system-ui;
+            color: green;
+            text-align: center;
+            text-shadow: -2.25px 0px white, 2.5px 0px white, 0px 2px white, 0px -1.5px white;
+            letter-spacing: 4px;
+            word-spacing: 5px;
+            position: sticky;
+            top: 0px;
+            background-color: black;
+            width: 100%;
+            z-index: 4;
+        }
+
+        .family {
+            width: 200px;
+            height: 200px;
+            background-color: transparent;
+            perspective: 500px;
+        }
+
+        .parent {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 5s;
+            transform-style: preserve-3d;
+        }
+
+        .family:hover .parent {
+            transform: rotateX(180deg);
+        }
+
+        .front,
+        .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+        }
+
+        .back {
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            box-sizing: border-box;
+            padding: 10px;
+            background-image: linear-gradient(45deg, violet, indigo, skyblue, lightgreen, white, yellow, red);
+            transform: rotateX(180deg);
+        }
+
+        #two {
+            background-image: url(https://cdn.pixabay.com/animation/2023/06/14/03/32/03-32-40-575_512.gif);
+            color: white;
+            background-size: cover;
+        }
+        #three{
+            background-image: url(https://media.giphy.com/media/ToMjGpPcTt3go0nrrFe/giphy.gif);
+            background-size: cover;
+            color: white;
+        }
+        #four{
+            background-image: url(https://media1.giphy.com/media/6uu3ZNNgRBt61eZ1Zh/giphy.gif);
+            background-size: cover;
+        }
+        #five{
+            background-image: url(http://bestanimations.com/Food/pancakes-animated-gif-1.gif);
+            background-size: cover;
+            color: white;
+        }
+        #six{
+            background-image: url(https://media.tenor.com/2Jcp2gPh78oAAAAC/crown-joypixels.gif);
+            background-size: cover;
+        }
+        #seven{
+            background-image: linear-gradient(45deg, purple,pink);
+            color: white;
+        }
+        #eight{
+            background-image: url(https://media1.tenor.com/images/5507109ffb64b8861dc5097764727720/tenor.gif?itemid=14354981);
+            background-size: cover;
+            color: wheat;
+        }
+        #nine{
+            background-image: url(https://media0.giphy.com/media/xTiTnwtxXU2SbrTsmA/source.gif);
+            background-size: cover;
+            color: white;
+        }
+        #ten{
+            background-image: linear-gradient(45deg, purple,yellow, red);
+            color: black;
+        }
+        #parrot{
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            z-index: 2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>raju's fortunes</h1>
+    <img src="https://media.tenor.com/d2Al9q8OhbIAAAAj/poptin-popups.gif" alt="" id="parrot">
+    <div class="main">
+        <div class="family">
+            <div class="parent">
+                <div class="front">
+                    <img src="https://imgv3.fotor.com/images/gallery/beautiful-machine-girl-with-blue-eyes-created-by-Fotor-ai-art-creator.jpg"
+                        alt="" width="200px" height="200px">
+                </div>
+                <div class="back">
+                    <h2 style="text-decoration: overline; text-shadow: 0px 0px 3px grey; color: purple;">Hey beautiful !
+                    </h2>
+                    <p>Your dreams are closer than they appear. <span
+                            style=" text-shadow: 0px 0px 3px rgb(190, 188, 188);">Don't step back dear</span> </p>
+                </div>
+            </div>
+        </div>
+        <div class="family">
+            <div class="parent">
+                <div class="front">
+                    <img src="https://images.nightcafe.studio/jobs/dh5mmuTYLCMnZSHNvqVL/dh5mmuTYLCMnZSHNvqVL--1--uqneu_2x.jpg?tr=w-1600,c-at_max"
+                        alt="" width="200px" height="200px">
+                </div>
+                <div class="back" id="two">
+                    <h2 style="text-decoration: overline;">Hey gorgeous !</h2>
+                    <p>Your smile will light up someone’s day today. so, Smile.</p>
+                </div>
+            </div>
+        </div>
+        <div class="family">
+            <div class="parent">
+                <div class="front">
+                    <img src="https://images.nightcafe.studio/jobs/badaPHb5bPCilrsGEcnB/badaPHb5bPCilrsGEcnB--1--cvch3.jpg?tr=w-1600,c-at_max"
+                        alt="" width="200px" height="200px">
+                </div>
+                <div class="back" id="three">
+                    <h2>for you!</h2>
+                    <p>Today is going to be your memorable day.. Cherish with a warm welcome.</p>
+                </div>
+            </div>
+        </div>
+        <div class="family">
+            <div class="parent">
+                <div class="front">
+                    <img src="https://i.pinimg.com/736x/c6/de/1f/c6de1f0d47bfdd48002988d40fa202d2--character-art-fantasy-art.jpg"
+                        alt="" width="200px" height="200px">
+                </div>
+                <div class="back" id="four">
+
+                    <p>A hidden talent of yours will soon be revealed to the world. I know you are freaking good at
+                        that!</p>
+                </div>
+            </div>
+        </div>
+        <div class="family">
+            <div class="parent">
+                <div class="front">
+                    <img src="https://as2.ftcdn.net/v2/jpg/05/70/16/75/1000_F_570167573_sPBckXxkpyci5Xrpnx2cMEiU4HUNgz22.jpg"
+                        alt="" width="200px" height="200px">
+                </div>
+                <div class="back" id="five">
+                    <h2 style="text-decoration: underline;">Mini foodie
+                    </h2>
+                    <p>Your delicious meal is waiting at your home, and be ready to share with your sibling!  </p>
+                </div>
+            </div>
+        </div>
+        <div class="family">
+            <div class="parent">
+                <div class="front">
+                    <img src="https://storage.prompt-hunt.workers.dev/clez2i3si0006mm08k10yw1xm_1"
+                        alt="" width="200px" height="200px">
+                </div>
+                <div class="back" id="six">
+                    <h2 style=" text-shadow: 0px 0px 3px grey; color: purple;">Steel heart
+                    </h2>
+                    <p>You have tried a lot to achieve, be ready to crown soon.</p>
+                </div>
+            </div>
+        </div>
+        <div class="family">
+            <div class="parent">
+                <div class="front">
+                    <img src="https://images.nightcafe.studio/jobs/3BZevXtlKfw7FqSZR5oW/3BZevXtlKfw7FqSZR5oW--1--qpz9h.jpg?tr=w-1600,c-at_max"
+                        alt="" width="200px" height="200px">
+                </div>
+                <div class="back" id="seven">
+                    <h2 style=" text-shadow: 0px 0px 3px grey; color: purple;">Karma retuns 
+                    </h2>
+                    <p>You will be helped by the person whom you helped before.</p>
+                </div>
+            </div>
+        </div>
+        <div class="family">
+            <div class="parent">
+                <div class="front">
+                    <img src="https://images.nightcafe.studio/jobs/PWYXWWJo3O7Qd9ORTIgq/PWYXWWJo3O7Qd9ORTIgq--1--837ct_6x.jpg?tr=w-1600,c-at_max"
+                        alt="" width="200px" height="200px">
+                </div>
+                <div class="back" id="eight">
+                    <h2 style="text-decoration: underline; ">For my angel!
+                    </h2>
+                    <p>Appreciate your own uniqueness and talents. Embrace and Stand for yourself. </p>
+                </div>
+            </div>
+        </div>
+        <div class="family">
+            <div class="parent">
+                <div class="front">
+                    <img src="https://i.pinimg.com/originals/e7/98/8a/e7988af427d8bd6baa2272bbc0367878.jpg"
+                        alt="" width="200px" height="200px">
+                </div>
+                <div class="back" id="nine">
+                    <h2 style=" text-shadow: 0px 0px 3px grey; color: white;">Sacrificer!
+                    </h2>
+                    <p>Your high spirits are a valuable assest because of your excellent self-control.</p>
+                </div>
+            </div>
+        </div>
+        <div class="family">
+            <div class="parent">
+                <div class="front">
+                    <img src="https://img.freepik.com/premium-photo/dark-fantasy-king-sits-throne_900370-25602.jpg?w=900"
+                        alt="" width="200px" height="200px">
+                </div>
+                <div class="back" id="ten">
+                    <h2>You're near!
+                    </h2>
+                    <p>Your even temper and self-control have won you in a many battle.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
